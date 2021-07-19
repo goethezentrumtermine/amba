@@ -1,0 +1,458 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"><head>
+	<base href="https://service2.diplo.de/rktermin/">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=9; IE=10; IE=11">
+	<title>
+		RK-Termin
+	</title>	
+	<link rel="stylesheet" type="text/css" href="style_css/reset.css">	
+	<link rel="stylesheet" type="text/css" media="screen" href="style_css/screen.css">	
+	<link rel="stylesheet" type="text/css" media="print" href="style_css/print.css">	
+	<link rel="stylesheet" type="text/css" media="screen" href="style_css/rktermin.css">
+	
+	<!--[if gte IE 7]><link rel="stylesheet" type="text/css" media="screen" href="style_css/ie7.css" /><![endif]-->	
+	<!--[if gte IE 6]><link rel="stylesheet" type="text/css" media="screen" href="style_css/ie6.css" /><![endif]-->	
+	<!--[if lte IE 5.5000]><link rel="stylesheet" type="text/css" media="screen" href="style_css/ie5.css" /><![endif]-->	
+
+
+	<link rel="stylesheet" type="text/css" href="css/redmond/jquery-ui-1.11.4.custom.min.css">
+	<script type="text/javascript" src="js/jquery-1.6.2.min.js"></script> 
+	<script type="text/javascript" src="js/jquery-ui-1.11.4.custom.min.js"></script> 
+	
+		<script type="text/javascript" src="js/jquery-ui-timepicker-de.js"></script>
+		<script type="text/javascript" src="js/jquery.ui.datepicker-de.js"></script> 
+		
+</head>
+<body>
+<div id="global">
+
+	<div id="header">
+	
+		<div id="logo">
+			<img src="style_images/auswaertiges-amt-logo-220x120.gif" alt="Auswärtiges Amt">
+		</div>
+		<div id="logo-app" style="background-image:  url('images/auswaertigesamt.gif'); min-height: 54px; width: 78%;">
+			&nbsp;
+		</div>
+		<div id="nav-main" style="min-height: 28px;">
+		
+
+<ul>
+	<li></li>
+</ul>
+		</div>		
+	
+	</div> <!-- end: #header -->			
+
+	
+	<div id="main" class="l-s">
+			
+		<div id="content">
+		
+			<div class="wrapper">	
+			
+
+
+
+<div style="font-size: 14pt; font-weight: bold; margin-bottom: 1em;">
+</div>
+
+
+
+
+
+
+
+
+	<fieldset>
+		<legend>Neuer Termin</legend>	        
+<form id="appointment_newAppointmentForm" name="appointment_newAppointmentForm" onsubmit="startCommitRequest();" action="/rktermin/extern/appointment_showForm.do" method="post" class="top">
+			<div id="wwgrp_appointment_newAppointmentForm_lastname" class="input text s">
+<div id="wwlbl_appointment_newAppointmentForm_lastname" class="wwlbl">
+<label for="appointment_newAppointmentForm_lastname" class="label">        Nachname:
+</label></div> 
+<div id="wwctrl_appointment_newAppointmentForm_lastname">
+<input type="text" name="lastname" value="" id="appointment_newAppointmentForm_lastname" class="input text s" onkeypress="doNothing(event)"></div> </div>
+
+			<div id="wwgrp_appointment_newAppointmentForm_firstname" class="input text s">
+<div id="wwlbl_appointment_newAppointmentForm_firstname" class="wwlbl">
+<label for="appointment_newAppointmentForm_firstname" class="label">        Vorname:
+</label></div> 
+<div id="wwctrl_appointment_newAppointmentForm_firstname">
+<input type="text" name="firstname" value="" id="appointment_newAppointmentForm_firstname" class="input text s" onkeypress="doNothing(event)"></div> </div>
+
+			<div id="wwgrp_appointment_newAppointmentForm_email" class="input text s">
+<div id="wwlbl_appointment_newAppointmentForm_email" class="wwlbl">
+<label for="appointment_newAppointmentForm_email" class="label">        E-Mail:
+</label></div> 
+<div id="wwctrl_appointment_newAppointmentForm_email">
+<input type="text" name="email" value="" id="appointment_newAppointmentForm_email" class="input text s" onkeypress="doNothing(event)"></div> </div>
+
+			<div id="wwgrp_appointment_newAppointmentForm_emailrepeat" class="input text s">
+<div id="wwlbl_appointment_newAppointmentForm_emailrepeat" class="wwlbl">
+<label for="appointment_newAppointmentForm_emailrepeat" class="label">        E-Mail wiederholen:
+</label></div> 
+<div id="wwctrl_appointment_newAppointmentForm_emailrepeat">
+<input type="text" name="emailrepeat" value="" id="appointment_newAppointmentForm_emailrepeat" class="input text s" onkeypress="doNothing(event)" onpaste="return false;" autocomplete="off"></div> </div>
+
+			
+			
+			 
+<div id="wwgrp_appointment_newAppointmentForm_fields_1__content" class="input text l">
+    <div id="wwlbl_appointment_newAppointmentForm_fields_1__content" class="wwlbl">
+    <label for="appointment_newAppointmentForm_fields_1__content" class="label"><span class="required">*</span>        Passnummer / Numri i pasaportës / broj pasoša:
+    </label></div> 
+    <div id="wwctrl_appointment_newAppointmentForm_fields_1__content">
+    <input type="text" name="fields[1].content" value="" id="appointment_newAppointmentForm_fields_1__content" class="input text l" onkeypress="doNothing(event)"></div> </div>
+    
+                        
+                        
+                    
+    
+                    
+                    
+                    
+                    
+                    
+                    <input type="hidden" name="fields[1].definitionId" value="8235" id="appointment_newAppointmentForm_fields_1__definitionId">
+                    <input type="hidden" name="fields[1].index" value="1" id="appointment_newAppointmentForm_fields_1__index">
+                
+			
+				
+			
+				
+
+				
+					
+						<div id="wwgrp_fields0content" class="input text l">
+<div id="wwlbl_fields0content" class="wwlbl">
+<label for="fields0content" class="label"><span class="required">*</span>        Geburtsdatum / Data e lindjes / Datum rođenja:
+</label></div> 
+<div id="wwctrl_fields0content">
+<input type="text" name="fields0content" value="" readonly="readonly" id="fields0content" class="input text l hasDatepicker"></div> </div>
+
+					
+					
+					<input type="hidden" name="fields[0].content" value="" id="fields0contenthidden">
+					<script>
+						$(function() {
+							$("#fields0content").datepicker({
+								dateFormat : 'dd.mm.yy',
+								changeMonth: true,
+							    changeYear: true,
+							    minDate: '-100y',
+							    maxDate: '+50y',
+							    yearRange: 'c-100:c+50',
+							    onSelect: function (dateText, source) {
+							    	if(dateText != null && dateText != ''){
+							    		var dp = dateText.split('.');
+							    		var newDp = dp[2] + '-' + dp[1] + '-' + dp[0];
+							    		$("#fields0contenthidden").val(newDp);
+							    	} 
+							    	
+							    },
+								
+							});
+							var repeat = $("#fields0contenthidden").val();
+							if(repeat) {
+								var dp = repeat.split('-');
+								var newDp = dp[0];
+								if(dp.length>1) {
+									newDp = dp[2] + '.' + dp[1] + '.' + dp[0];
+								}
+								$("#fields0content").val(newDp);
+							}
+						});
+					</script>
+				
+				
+				
+				
+				
+				<input type="hidden" name="fields[0].definitionId" value="8234" id="appointment_newAppointmentForm_fields_0__definitionId">
+				<input type="hidden" name="fields[0].index" value="0" id="appointment_newAppointmentForm_fields_0__index">
+			
+				
+			
+				
+					
+						
+				
+			
+				
+					
+						<div id="wwgrp_appointment_newAppointmentForm_fields_2__content" class="input text l">
+<div id="wwlbl_appointment_newAppointmentForm_fields_2__content" class="wwlbl">
+<label for="appointment_newAppointmentForm_fields_2__content" class="label"><span class="required">*</span>        Telefonnummer / Numri i telefonit / Broj telefona:
+</label></div> 
+<div id="wwctrl_appointment_newAppointmentForm_fields_2__content">
+<input type="text" name="fields[2].content" value="" id="appointment_newAppointmentForm_fields_2__content" class="input text l" onkeypress="doNothing(event)"></div> </div>
+				<input type="hidden" name="fields[2].definitionId" value="8236" id="appointment_newAppointmentForm_fields_2__definitionId">
+				<input type="hidden" name="fields[2].index" value="2" id="appointment_newAppointmentForm_fields_2__index">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+a
+a
+a
+
+a
+a
+a
+a
+
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+
+a
+-->
+
+
+
+
+
+
+                					
+    <div id="" class="input text l">
+    <div id="wwlbl_appointment_newAppointmentForm_fields_4__content" class="wwlbl">
+    <label for="appointment_newAppointmentForm_fields_4__content" class="label"><span class="required">*</span>        Name des Arbeitgebers/ Emri i punedhenesit /Ime poslodavca:
+    </label></div> 
+    <div id="">
+<input type="text" name="fields[4].content" value="" id="emriPunedhenesi" class="input text l" onkeypress="doNothing(event)"></div> </div>				           					
+    <div id="" class="input text l">
+        <div id="wwlbl_appointment_newAppointmentForm_fields_4__content" class="wwlbl">
+        <label for="appointment_newAppointmentForm_fields_4__content" class="label">       PLZ des Arbeitgebers / kodi postar i punedhenesit / postanski broj:
+        </label></div> 
+        <div id="">
+<input type="text" name="fields[4].content" value="" id="kodipostarPunedhenesi" class="input text l" onkeypress="doNothing(event)"></div> </div>							
+       <div id="" class="input text l">
+       <div id="" class="wwlbl">
+       <label for="appointment_newAppointmentForm_fields_4__content" class="label"><span class="required">*</span>       Ort des Arbeitgebers / vendndodhja e punedhenesit / mesto poslodavca:
+       </label></div> 
+        <div id="">
+<input type="text" name="fields[4].content" value="" id="vendndodhjaPunedhenesi" class="input text l" onkeypress="doNothing(event)"></div> </div>
+       <div>
+
+
+
+
+
+
+
+
+<!--
+a
+a
+a
+
+a
+a
+a
+a
+
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+
+a
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+				
+				<div class="input text s">
+					<captcha>
+<div id="_-1254769768" style="background:white url('data:image/jpg;base64,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') no-repeat scroll left top;width:350px;height:50px;margin:2em;display:block;">&nbsp;</div>
+</captcha>
+
+ 
+
+				</div>
+				
+				<div class="input submit left">
+					<input type="submit" value="Neues Bild laden" id="appointment_newAppointmentForm_form_newappointment_refreshcaptcha" name="action:appointment_refreshCaptcha">
+
+				</div>
+			</div>
+			<div id="wwgrp_appointment_newAppointmentForm_captchaText" class="input text s">
+<div id="wwlbl_appointment_newAppointmentForm_captchaText" class="wwlbl">
+<label for="appointment_newAppointmentForm_captchaText" class="label">        Bitte geben Sie hier den Text ein, den Sie im Bild über diesem Feld sehen:
+</label></div> 
+<div id="wwctrl_appointment_newAppointmentForm_captchaText">
+<input type="text" name="captchaText" value="" id="appointment_newAppointmentForm_captchaText" class="input text s" onkeypress="checkKey(event)"></div> </div>
+
+			<input type="hidden" name="locationCode" value="pris" id="appointment_newAppointmentForm_locationCode">
+			<input type="hidden" name="realmId" value="362" id="appointment_newAppointmentForm_realmId">
+			<input type="hidden" name="categoryId" value="2319" id="appointment_newAppointmentForm_categoryId">
+			<input type="hidden" name="openingPeriodId" value="61479" id="appointment_newAppointmentForm_openingPeriodId">
+			<input type="hidden" name="date" value="05.08.2021" id="appointment_newAppointmentForm_date">
+			<input type="hidden" name="dateStr" value="05.08.2021" id="appointment_newAppointmentForm_dateStr">
+			
+				
+				
+				
+				
+			    <script type="text/javascript">
+			    function checkKey(event){   
+			        if(event.keyCode == 13){
+			            document.appointment_newAppointmentForm.action="extern/appointment_addAppointment.do";
+			            document.appointment_newAppointmentForm.submit();
+			            event.preventDefault();
+			        }
+			    }
+			    function doNothing(event){   
+			        if(event.keyCode == 13){
+			        	event.preventDefault();
+			        	return false;
+			        }
+			    }
+			      </script>
+			<div class="input submit left">
+	<input type="submit" value="Speichern" id="appointment_newAppointmentForm_appointment_addAppointment" name="action:appointment_addAppointment">
+<input type="submit" value="Abbrechen" id="appointment_newAppointmentForm_appointment_cancelAddAppointment" name="action:appointment_cancelAddAppointment">
+</div>      
+
+		
+		</form>
+
+
+
+	</fieldset>
+
+
+
+
+
+<script language="javascript" type="text/javascript">
+
+$(function() {
+	$("#commit-request").dialog({
+		resizable : false,
+		height : 200,
+		width: 350,
+		modal : true,
+		autoOpen: false, 
+		buttons : {
+			/* none */
+		},
+		close: function( event, ui ) {
+			$('#commit-request').dialog('open');
+		}
+	});
+ 	$( "#commit-request-progressbar" ).progressbar({
+	  value: false
+	});
+});
+
+function startCommitRequest(event) {
+	
+	$("#commit-request").css('cursor', 'progress');
+	
+	setTimeout("innerStartCommitRequest()", 500);
+
+	return true;
+	
+}
+
+function innerStartCommitRequest() {
+	$('#commit-request').dialog('open');
+}
+
+</script>
+
+
+
+
+			</div>
+			
+			<div class="bottom"></div>
+			
+		</div>
+		
+		<div id="context">
+		
+			<div class="wrapper">
+				&nbsp;
+			</div>
+			
+		</div>
+		
+	</div> <!-- end: #main -->
+	<div id="footer">
+		
+
+
+
+<div style="min-height: 15px;">
+	<ul>
+		<li>RK-Termin&nbsp;1.2.36.1</li>
+		<li style="margin-left: 5em;">
+			     
+				<a href="extern/dsgvo.do?request_locale=de" target="_blank" title="Information zum Datenschutz und Nutzungshinweise"><img src="images/flags/de.png" alt="Information zum Datenschutz und Nutzungshinweise" title="Information zum Datenschutz und Nutzungshinweise">&nbsp; Information
+					zum Datenschutz und Nutzungshinweise</a>
+			</li>
+	</ul>
+</div>
+
+
+
+	</div>
+</div>
+
+<div id="ui-datepicker-div" class="ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all"></div><div class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-front ui-draggable" tabindex="-1" role="dialog" aria-describedby="commit-request" aria-labelledby="ui-id-1" style="display: none;"><div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix ui-draggable-handle"><span id="ui-id-1" class="ui-dialog-title">In Bearbeitung ... </span><button type="button" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-icon-only ui-dialog-titlebar-close" role="button" title="Close"><span class="ui-button-icon-primary ui-icon ui-icon-closethick"></span><span class="ui-button-text">Close</span></button></div><div id="commit-request" class="ui-dialog-content ui-widget-content">
+	<p>
+		<span class="ui-icon ui-icon-alert" style="float: left; margin: 0 7px 20px 0; margin-bottom: 100px"></span>
+		<span id="question">
+			<b>bitte haben Sie etwas Geduld ...</b><br>Ihre Anfrage wird bearbeitet. Bitte warten Sie auf eine Antwort. Das Neuladen der Seite verzögert die Bearbeitung.
+		</span>
+		
+	</p>
+	<div id="commit-request-progressbar" style="background: #7192b6;" class="ui-progressbar ui-widget ui-widget-content ui-corner-all ui-progressbar-indeterminate" role="progressbar" aria-valuemin="0">
+	
+		<div style="background: rgba(0,0,0,0) url('images/indet.gif'); opacity:0.25; height:2em;">
+			&nbsp;
+		</div>
+	
+	<div class="ui-progressbar-value ui-widget-header ui-corner-left" style="width: 100%;"><div class="ui-progressbar-overlay"></div></div></div>
+</div></div></body></html>
